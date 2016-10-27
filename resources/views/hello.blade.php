@@ -1,12 +1,14 @@
-@extends('layout.App)
+<!doctype html>
+<html lang="en">
 
-@section(htmlhead)
+@extends('layout.App')
+
+@section('htmlheader')
 
     @include('partials.htmlheader')
 
 @endsection
-
-
+<body>
 
 @section('content')
 
@@ -14,8 +16,17 @@ hello world
 
 @endsection
 
-@section(htmlfooter)
+@section('htmlfooter')
 
     @include('partials.htmlfooter')
 
 @endsection
+
+@section('scripts')
+
+    @include('partials.scripts')
+
+@endsection
+
+</body>
+</html>
